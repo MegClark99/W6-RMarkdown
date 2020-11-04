@@ -18,7 +18,6 @@ knitr::opts_chunk$set(echo = FALSE,
 library(tidyverse)
 library(Rmisc)
 library(tidyverse)
-library(dplyr)
 ```
 
 Intro
@@ -53,4 +52,28 @@ sum_sq <- function(df, measure, group) {
 }
 
 sum_sq(chaff, mass, sex)
+
+#summarising the masses by sex - 
+#include the mean, standard deviation, sample size and the standard error
+chaffsummary2 <- chaff %>% 
+  group_by(sex) %>% 
+  summarise(mean_mass = mean(mass),
+            n = length(mass),
+            sd = sd(mass),
+            se = sd/sqrt(n))
+
+#create a function called data_summary() that carries out that summarising? 
+#You will need to use the double braces,{{ }}
+chaffsummaryfunc <- function(ds, measure, group) {
+  chaff %>% group_by(sex) %>% 
+  summarise(mean_mass = mean(mass),
+            n = length(mass),
+            sd = sd(mass),
+            se = sd/sqrt(n))
+}
+chaffsummaryfunc(chaff, mass, sex)
+
+
+
+
 
