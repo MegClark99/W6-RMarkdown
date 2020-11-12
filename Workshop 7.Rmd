@@ -25,7 +25,7 @@ devtools::install_github("ropensci/RefManageR")
 devtools::install_github("crsh/citr")
 citation("package")
 
-
+t.test(data= chaff, mass ~ sex, paired = TRUE)
 
 
 

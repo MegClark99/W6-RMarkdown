@@ -2,10 +2,7 @@
 title: "Chaff"
 author: "Megan Clark"
 date: "04/11/2020"
-output: 
-  bookdown::pdf_document2: default
-  bookdown::word_document2: default
-  bookdown::html_document2: default
+output: html_document
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, 
