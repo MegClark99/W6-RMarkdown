@@ -16,10 +16,11 @@ library(knitr)
 
 # Introduction
 Chaffinches [@Browne2004-gz]
-(ref:pic1)
+```{r, out.width="30%", fig.cap="*Fig.1* Photograph of a male chaffinch. Photo by © Andreas Trepte, commons.wikimedia.org/wiki/File:pic1.jpg"}
+knitr::include_graphics("pic1.jpg")
+```
 
 # Discussion
-# installing citr and RefManageR
 devtools::install_github("ropensci/RefManageR")
 devtools::install_github("crsh/citr")
 citation("package")
