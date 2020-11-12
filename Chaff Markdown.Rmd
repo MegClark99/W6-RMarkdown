@@ -23,13 +23,13 @@ library(gt)
 library(flextable)
 ```
 
-Intro
-We decided to look into if the mean mass of chaffinches differ between male and female
+#Intro
+#We decided to look into if the mean mass of chaffinches differ between male and female
 
-Methods
-We collected 20 samples of both male and female chaffinches and weighed them
+#Methods
+#We collected 20 samples of both male and female chaffinches and weighed them
 
-Discussion
+#Discussion
 
 
 

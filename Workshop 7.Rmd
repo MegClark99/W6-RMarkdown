@@ -2,11 +2,8 @@
 title: "Week 7 Workshop"
 author: "Megan Clark"
 date: "12/11/2020"
-output: 
-  bookdown::pdf_document2: default
-  bookdown::word_document2: default
-  bookdown::html_document2: default
-Bibliography: References.Bib
+output: html_document
+bibliography: References.bib
 
 ---
 
@@ -14,31 +11,18 @@ Bibliography: References.Bib
 library(kableExtra)
 library(gt)
 library(flextable)
+library(knitr)
 ```
 
+# Introduction
+Chaffinches [@Browne2004-gz]
+(ref:pic1)
 
-
-#############################################################################################
-#                                           WEEK 7 WORKSHOP
-#############################################################################################
-
-#############################################################################################
-#                                           INTRODUCTION
-#############################################################################################
-
-
+# Discussion
 # installing citr and RefManageR
 devtools::install_github("ropensci/RefManageR")
 devtools::install_github("crsh/citr")
-
-
-
-
-
-#############################################################################################
-#                                           REFERENCES
-#############################################################################################
-
+citation("package")
 
 
 
